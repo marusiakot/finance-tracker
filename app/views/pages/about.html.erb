@@ -1,0 +1,97 @@
+<style>
+.block1 {
+    margin-top: 120px;
+    margin-left: 70px;
+    margin-right: 20px;
+    color: white;
+    width: 1000px;
+     box-sizing: border-box;
+     overflow: auto;
+     background: rgb(229, 233, 255);
+     padding: 10px;
+     border: 2px solid ;
+}
+
+.o_nas {
+    margin: 7px 10px 7px 10px;
+    width: 65%;
+    box-sizing: border-box;
+}
+
+.o_nas p {
+    color: rgb(38, 36, 48);
+    font-weight: bold;
+    font-family: "Palatino Linotype", Baskerville, serif;
+}
+
+
+body {
+    rgba(225, 231, 232,.4);
+}   
+
+.analitics {
+    width: 1000px;
+    height: 600px;
+    box-sizing: border-box;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.analitics img {
+    border: 1px solid black;
+    border-radius: 50%;
+    
+}
+
+.vladimir {
+    float: left;
+}
+
+.anton {
+    float: right;
+}
+
+.fedor {
+    margin-left: 378px;
+}
+
+.analitics p {
+    max-width: 270px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+</style>
+
+<body>
+<div class="block1">
+    <div class='o_nas'>
+        <p> Команда аналитиков "A-club" ведет разбор основных хоккейных, баскетбольных, футбольных лиг, а так же теннис и смешанные единоборства.
+        Не одна деталь не остается без внимания, что приводит к нужному резульату. 5 наших аналитиков собирают информацию, анализируют,
+        выбирают только самые логичные события
+        и преподносят к вам уже готовый, обоснованный материал. Уследить в одиночку за всем невозможно! 
+        Именно поэтому, мы предлагаем свои услуги, чтобы вы могли пропустить этот трудоемкий процесс и приступить к заработку! </p>
+     </div>
+</div>
+
+    <div class="analitics">
+        <div class="vladimir">
+        <%= image_tag("vladimir.jpg", :alt => "Vladimir", :height => "250px", :width => "250px") %>
+        <p> Владимир, специалист NBA и WTA
+        </p>
+        </div>
+        <div class='anton'>
+        <%= image_tag("anton.jpg", :alt => "Anton", :height => "250px", :width => "250px") %>
+        <p> Антон, специалист ВХЛ и ATP </p>
+        </div>
+        <div class="fedor">
+        <%= image_tag("fedor.jpg", :alt => "Fedor", :height => "250px", :width => "250px") %>
+        <p> Федор, специалист NHL и матчей сборных команд по хоккею </p>
+        </div>
+    </div>
+    
+    <div class="contacts">
+        
+    </div>    
+</body>

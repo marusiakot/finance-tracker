@@ -1,0 +1,39 @@
+
+<h1 align="center" style="color: white; 
+  text-align: center;
+ // box-shadow: 5px 5px 10px rgba(232, 239, 236,.9);
+ padding-bottom: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 2.75em;
+  background: rgb(38, 36, 48);
+  margin-top: 70px;
+  padding-top: 12px;">Наши прогнозы</h1>
+
+
+    
+        
+        <%= link_to "Создать прогноз", new_article_path, class: "btn btn-success btn-xs art-btn center" %>
+        <div align="center">
+        <%= will_paginate %>
+        </div>
+        <%= render 'article', obj: @articles %>
+        <div align="center">
+        <%= will_paginate %>
+        </div>
+        
+        
+   
+   
+        <% @articles.each do |article| %>
+        <tr>
+            <th><%= article.title %></th>
+            <th><%= article.description %></th>
+            <th><%= link_to "Редактировать", edit_article_path(article) %></th>
+            <th><%= link_to "Посмотреть полное описание", article_path(article) %></th>
+            <th><%= link_to "Удалить", article_path(article), method: :delete, data: {confirm: "Вы уверены?"} %> </th>
+        </tr>
+            <% end %>
+        </table>
+
+
